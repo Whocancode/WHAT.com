@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เช็คเงินที่ติด</title>
+  <link rel="stylesheet" href="Gay.css">
+</head>
+<body>
+  <div class="container">
+    <h1>เช็คว่าติดเท่าไร</h1>
+
+    <div class="balance-section">
+      <h2>ติดโอ็ตอยู่: <span id="balance">0</span> บาท</h2>
+    </div>
+
+    <div class="transaction-section">
+      <h3>ติดเพิ่ม</h3>
+      <input type="number" id="deposit-amount" placeholder="จำนวนเงิน" />
+      <button onclick="deposit()">ตกลง</button>
+    </div>
+
+    <div class="transaction-section">
+      <h3>ใช้คืน</h3>
+      <input type="number" id="withdraw-amount" placeholder="จำนวนเงิน" />
+      <label for="file-input" class="file-label">แนบรูปภาพ (ถ้ามี)</label>
+      <input type="file" id="file-input" accept="image/*" />
+      <button onclick="withdraw()">ตกลง</button>
+    </div>
+
+    <div class="message">
+      <p id="message"></p>
+    </div>
+
+    <div class="history-section">
+      <h3>ประวัติการคืน</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="WOW.js"></script>
+</body>
+</html>
